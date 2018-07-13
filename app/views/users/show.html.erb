@@ -1,0 +1,9 @@
+<h1> Username: <%= @user.username %></h1>
+
+
+
+<form action="<%= session_url %>" method="post">
+  <%= form_auth %>
+  <input type="hidden" name="_method" value="delete">
+    <input type="submit" value="log out">
+</form>
